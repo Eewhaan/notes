@@ -7,7 +7,4 @@
 
 import UIKit
 
-class NoteCell: UITableViewCell {
-    @IBOutlet var noteLabel: UILabel!
-    @IBOutlet var deleteButton: UIButton!
-}
+
