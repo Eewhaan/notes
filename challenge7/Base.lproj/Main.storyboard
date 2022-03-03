@@ -17,46 +17,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Note" id="Zta-7y-oAl" customClass="NoteCell" customModule="challenge7" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="49.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Note" textLabel="VNc-iu-rEL" rowHeight="45" style="IBUITableViewCellStyleDefault" id="Zta-7y-oAl" customClass="NoteCell" customModule="challenge7" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zta-7y-oAl" id="X7K-r6-oWn">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="45"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mi-ez-amK">
-                                            <rect key="frame" x="61" y="9" width="316" height="27"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="316" id="16o-XV-7R3"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VNc-iu-rEL">
+                                            <rect key="frame" x="20" y="0.0" width="357.5" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-zU-iEg">
-                                            <rect key="frame" x="20" y="9" width="33" height="26"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system"/>
-                                            <connections>
-                                                <action selector="deleteCell:" destination="UkH-6w-3Kz" eventType="touchUpInside" id="SCV-BD-sak"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="pb1-zU-iEg" firstAttribute="centerY" secondItem="X7K-r6-oWn" secondAttribute="centerY" id="92j-zf-N3S"/>
-                                        <constraint firstItem="9Mi-ez-amK" firstAttribute="top" secondItem="X7K-r6-oWn" secondAttribute="topMargin" constant="-2" id="YCY-oL-bms"/>
-                                        <constraint firstItem="9Mi-ez-amK" firstAttribute="leading" secondItem="X7K-r6-oWn" secondAttribute="leadingMargin" constant="41" id="aiJ-QL-vIB"/>
-                                        <constraint firstItem="pb1-zU-iEg" firstAttribute="centerY" secondItem="9Mi-ez-amK" secondAttribute="centerY" id="cYN-sV-fK9"/>
-                                        <constraint firstItem="pb1-zU-iEg" firstAttribute="top" secondItem="X7K-r6-oWn" secondAttribute="topMargin" constant="-2" id="i4c-0x-2uk"/>
-                                        <constraint firstItem="9Mi-ez-amK" firstAttribute="leading" secondItem="pb1-zU-iEg" secondAttribute="trailing" constant="8" symbolic="YES" id="mbG-Vy-QDi"/>
-                                    </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="deleteButton" destination="pb1-zU-iEg" id="M9C-3g-6Q1"/>
-                                    <outlet property="noteLabel" destination="9Mi-ez-amK" id="9ZQ-AW-jPg"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="UkH-6w-3Kz" id="CqW-nY-fg3"/>
                             <outlet property="delegate" destination="UkH-6w-3Kz" id="fbX-bl-kVj"/>
@@ -124,7 +103,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

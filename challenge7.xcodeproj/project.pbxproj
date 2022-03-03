@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DB5CF78127C5124F002AB06B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CF78027C5124F002AB06B /* Note.swift */; };
-		DBE394A927C29AC0002BC1DC /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE394A827C29AC0002BC1DC /* NoteCell.swift */; };
 		DBF959EB27C26CBD009B7606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF959EA27C26CBD009B7606 /* AppDelegate.swift */; };
 		DBF959ED27C26CBD009B7606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF959EC27C26CBD009B7606 /* SceneDelegate.swift */; };
 		DBF959EF27C26CBD009B7606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF959EE27C26CBD009B7606 /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		DB5CF78027C5124F002AB06B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		DBE394A827C29AC0002BC1DC /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		DBF959E727C26CBD009B7606 /* challenge7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challenge7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF959EA27C26CBD009B7606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF959EC27C26CBD009B7606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 				DBF959EC27C26CBD009B7606 /* SceneDelegate.swift */,
 				DBF959EE27C26CBD009B7606 /* ViewController.swift */,
 				DB5CF78027C5124F002AB06B /* Note.swift */,
-				DBE394A827C29AC0002BC1DC /* NoteCell.swift */,
 				DBF959FE27C26D88009B7606 /* DetailViewController.swift */,
 				DBF959F027C26CBD009B7606 /* Main.storyboard */,
 				DBF959F327C26CC0009B7606 /* Assets.xcassets */,
@@ -150,7 +147,6 @@
 				DBF959EF27C26CBD009B7606 /* ViewController.swift in Sources */,
 				DBF959EB27C26CBD009B7606 /* AppDelegate.swift in Sources */,
 				DB5CF78127C5124F002AB06B /* Note.swift in Sources */,
-				DBE394A927C29AC0002BC1DC /* NoteCell.swift in Sources */,
 				DBF959ED27C26CBD009B7606 /* SceneDelegate.swift in Sources */,
 				DBF959FF27C26D88009B7606 /* DetailViewController.swift in Sources */,
 			);

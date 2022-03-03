@@ -47,11 +47,9 @@ class ViewController: UITableViewController, DataSharingDelegateProtocol {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath) as? NoteCell else { fatalError("Unable to deque NoteCell") }
-        cell.noteLabel.text = notes[indexPath.row].noteTitle
-        cell.noteLabel.font = UIFont(name: "Noteworthy", size: 16)
-        cell.deleteButton.tintColor = UIColor(red: 1, green: 0.624, blue: 0.039, alpha: 0.8)
-        cell.deleteButton.tag = indexPath.row
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath)
+        cell.textLabel?.text = notes[indexPath.row].noteTitle
+        cell.textLabel?.font = UIFont(name: "Noteworthy", size: 16)
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -61,6 +59,14 @@ class ViewController: UITableViewController, DataSharingDelegateProtocol {
         vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
         
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notes.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .right)
+            save()
+        }
     }
     
     @objc func addNewNote() {
@@ -107,10 +113,4 @@ class ViewController: UITableViewController, DataSharingDelegateProtocol {
             defaults.set(savedData, forKey: "notes")
         }
     }
-    @IBAction func deleteCell(_ sender: UIButton) {
-        notes.remove(at: sender.tag)
-        tableView.reloadData()
-        save()
-    }
 }
-
